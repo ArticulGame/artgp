@@ -1,3 +1,15 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background: #1a1a1a;
 	color: white;
@@ -16,21 +28,28 @@ h2 {
 	font-size: 18px;
 }
 
-*,
-*::after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.dnt {
+	width: 700px;
+	font-size: 22px;
+	height: 250px;
+	padding-top: 30px;
 }
+
 
 .about {
 	background: #1a1a1a;
 	display: block;
+}
+
+.sitedescr {
+	height: 320px;
+}
+
+footer{
+	text-align:center;
+	height: 90px;
+	background: #303030;
+	padding-top: 30px;
 }
 
 #mainmenu {
@@ -57,7 +76,7 @@ h2 {
 }
 #mainmenu ul li a {
     color: #fff;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     padding: 0 15px;
     line-height: 80px;
@@ -78,7 +97,7 @@ h2 {
     left: 50%;
     float: left;
     font-size: 20px;
-    height: 50px
+    height: 50px;
 }
 
 #button ul li a {
@@ -87,21 +106,61 @@ h2 {
     text-decoration: none;
     padding: 0 35px;
     line-height: 50px;
+	border: 1px solid #6a84a0;
+	border-radius: 7px;
 	-moz-transition: all 0.3s 0.01s ease; 
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
-	border: 1px solid #6a84a0;
-	border-radius: 7px;
+
 }
 
 #button ul li {
-    position: relative;
-	padding: 0 20px;
-    left: -50%;
+	position: relative;
+	left: -50%;
     float: left;
+	padding: 0 20px;
     height: 50px;
 }
 
 #button ul li a:hover {
     background-color: #89bffb;
+} 
+
+
+h3{
+	padding: 20px 0px 10px 35px;
+	font-size: 30px;
+}
+
+span{
+	padding: 20px 0px 10px 35px;
+	float: left;
+	font-size: 18px;
+}
+
+#gameblock{
+	width:100%;
+	background: #444444;
+	height: 300px;
+}
+
+.gblock1{
+	float:left;
+	height: 230px;
+	width:50%;
+}
+
+.gblock2{
+	float:right;
+	height: 230px;
+	width:50%;
+	padding: 45px 0 0px 170px;
+}
+
+.gblock3{
+	float:left;
+	height: 70px;
+	width:50%;
+	padding-left: 10px;
+	margin-left: 200px;
 }
